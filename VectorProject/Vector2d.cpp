@@ -17,22 +17,6 @@ Vector2d::Vector2d(const Vector2d& obj)
 	this->x = obj.x;
 	this->y = obj.y;
 }
-void Vector2d::setx(double x)
-{
-	this->x = x;
-}
-double Vector2d::getx()
-{
-	return this->x;
-}
-void Vector2d::sety(double)
-{
-	this->y = y;
-}
-double Vector2d::gety()
-{
-	return this->y;
-}
 void Vector2d::sum(Vector2d b)
 {
 	x = x + b.x;
@@ -59,13 +43,10 @@ double Vector2d::Length()
 }
 double Vector2d::tg(Vector2d b, Vector2d a)
 {
-	double len1 = a.Length;
-	double len2 = b.Length;
+	double len1 = a.Length();
+	double len2 = b.Length();
 	double multi = b.ScalarMul;
 	double cos = multi / (len1 * len2);
 	double sin = sqrt(1 - pow(cos, 2));
 	return sin / cos;
-}
-Vector2d::~Vector2d()
-{
 }

@@ -9,7 +9,6 @@ public:
 	Vector2d(double, double);
 	Vector2d(double, double, double, double);
 	Vector2d(const Vector2d&);
-	~Vector2d();
 	void setx(double value) { x = value; }
 	double getx() { return x; }
 	void sety(double value) { y = value; }
@@ -21,7 +20,5 @@ public:
 	double Length();
 	double tg(Vector2d, Vector2d);
 	void print(void);
-
-	~Vector2d();
 };
 
