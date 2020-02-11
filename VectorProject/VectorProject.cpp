@@ -6,8 +6,8 @@
 using namespace std;
 int main()
 {
-	Vector2d a = { 25,15 };
-	Vector2d b = { 15, 25 };
+	Vector2D a = { 25,15 };
+	Vector2D b = { 15, 25 };
 	cout << "Скалярное произведение a и b: ";
 	a.ScalarMul(b);
 
